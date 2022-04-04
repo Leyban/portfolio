@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.bfe71e29.css",
+    "main.js": "/portfolio/static/js/main.a174f7c5.js",
+    "static/media/clipboard-design.jpg": "/portfolio/static/media/clipboard-design.755f4967e11e2f286253.jpg",
+    "static/media/easybank-design.jpg": "/portfolio/static/media/easybank-design.0abf2c21751411dc2f7a.jpg",
+    "static/media/fylo-design.jpg": "/portfolio/static/media/fylo-design.4c82df8c9b5b1ae57af7.jpg",
+    "static/media/crowdfund-design.jpg": "/portfolio/static/media/crowdfund-design.1e85d12f3c37dd43c67b.jpg",
+    "static/media/G100.png": "/portfolio/static/media/G100.1e30e3442617b56a4fa2.png",
+    "static/media/G40.png": "/portfolio/static/media/G40.3be55556e8d66e1b2440.png",
+    "static/media/TicTacToeMock.png": "/portfolio/static/media/TicTacToeMock.ff25878766fd3c4dd363.png",
+    "static/media/Tic Tac Toe Card.svg": "/portfolio/static/media/Tic Tac Toe Card.76c20cdb61cb2c777e3fc2d6250678da.svg",
+    "static/media/Calc Mock.png": "/portfolio/static/media/Calc Mock.ad240882851afd5568ee.png",
+    "static/media/gear_cover.png": "/portfolio/static/media/gear_cover.d6216ffb014a55842959.png",
+    "static/media/Crowdfund Card.svg": "/portfolio/static/media/Crowdfund Card.3eb105e880a6e44fc606381f60471d2f.svg",
+    "static/media/Calculator Card.svg": "/portfolio/static/media/Calculator Card.7a0afb8fd4aec58a58c69dbe4f348ed6.svg",
+    "static/media/Easybank Card.svg": "/portfolio/static/media/Easybank Card.c7737810a144264024c58d947c2c7acd.svg",
+    "static/media/G25.png": "/portfolio/static/media/G25.76ddbeabc3dc560934f5.png",
+    "static/media/Clipboard Card.svg": "/portfolio/static/media/Clipboard Card.49de5fd2e26d8060124391c6f37455d5.svg",
+    "static/media/Fylo Card.svg": "/portfolio/static/media/Fylo Card.34885983615e69daee477c3dbcb324f6.svg",
+    "static/media/logo-github-blue.svg": "/portfolio/static/media/logo-github-blue.677b321df7d5e1c04f5cb7a06c6cd2ce.svg",
+    "static/media/logo-github.svg": "/portfolio/static/media/logo-github.023368a05c88bcbc51aec734d078f8fa.svg",
+    "static/media/logo-linkedin-blue.svg": "/portfolio/static/media/logo-linkedin-blue.6f4f289b5b231d0ec1f48a829c39d9e3.svg",
+    "static/media/logo-linkedin.svg": "/portfolio/static/media/logo-linkedin.c94cd4f1c0692606a257ecbb6cf88a3f.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/Copy.svg": "/portfolio/static/media/Copy.84c0b92685e76b15308474da71976c1e.svg",
+    "static/media/Mail.svg": "/portfolio/static/media/Mail.77f9a5d2cc96c167d8b2e335bab3f351.svg",
+    "main.bfe71e29.css.map": "/portfolio/static/css/main.bfe71e29.css.map",
+    "main.a174f7c5.js.map": "/portfolio/static/js/main.a174f7c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfe71e29.css",
+    "static/js/main.a174f7c5.js"
+  ]
+}
