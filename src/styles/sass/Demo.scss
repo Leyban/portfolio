@@ -1,0 +1,247 @@
+@import './colors';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
+
+
+.demo{
+    font-family: 'Montserrat', sans-serif;
+    background-color: $dirtywhite;
+    text-align: center;
+    padding: 100px 0 100px 0;
+
+    .container{
+        width: 1200px;
+        height: 700px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 40px 0 40px 0;
+        color: #333;
+
+        >h1{
+            margin: 0;
+            font-size: 80px;
+            position: absolute;
+        }
+        a{
+            position: absolute;
+        }
+        .easybank-card{
+            transform: rotate(-30deg);
+            left: 100px;
+            top: 400px;
+            &:hover{
+                @keyframes lift1 {
+                    from {transform: rotate(-30deg);}
+                    to {transform: rotate(-30deg) translateY(-110px);}
+                }
+                animation: lift1 0.5s forwards;
+            }
+            &:hover ~ .display{
+                .easybank-design{
+                    @keyframes easybankpan {
+                        0% {top:0;}
+                        50% {top:-390px}
+                        100% {top:0px}
+                    }
+                    display: block;
+                    position: absolute;
+                    animation: easybankpan 10s ease infinite;
+                }
+            }
+        }
+        .clipboard-card{
+            transform:rotate(-10deg);
+            left: 145px;
+            top: 400px;
+            &:hover{
+                @keyframes lift2 {
+                    from {transform: rotate(-10deg);}
+                    to {transform: rotate(-10deg) translateY(-110px);}
+                }
+                animation: lift2 0.5s forwards;
+            }
+            &:hover ~ .display{
+                .clipboard-design{
+                    @keyframes clipboardpan {
+                        0% {top:0;}
+                        50% {top:-1150px}
+                        100% {top:0px}
+                    }
+                    display: block;
+                    position: absolute;
+                    animation: clipboardpan 10s ease infinite;
+                }
+            }
+        }
+        .fylo-card{
+            transform:rotate(10deg);
+            left: 190px;
+            top: 415px;
+            &:hover{
+                @keyframes lift3 {
+                    from {transform: rotate(10deg);}
+                    to {transform: rotate(10deg) translateY(-110px);}
+                }
+                animation: lift3 0.5s forwards;
+            }
+            &:hover ~ .display{
+                .fylo-design{
+                    @keyframes fylopan {
+                        0% {top:0;}
+                        50% {top:-1050px}
+                        100% {top:0px}
+                    }
+                    display: block;
+                    position: absolute;
+                    animation: fylopan 10s ease infinite;
+                }
+            }
+        }
+        .crowdfund-card{
+            transform:rotate(30deg);
+            left: 225px;
+            top: 445px;
+            &:hover{
+                @keyframes lift4 {
+                    from {transform: rotate(30deg);}
+                    to {transform: rotate(30deg) translateY(-110px);}
+                }
+                animation: lift4 0.5s forwards;
+            }
+            &:hover ~ .display{
+                .crowdfund-design{
+                    @keyframes crowdfundpan {
+                        0% {top:0;}
+                        50% {top:-310px}
+                        100% {top:0px}
+                    }
+                    display: block;
+                    position: absolute;
+                    animation: crowdfundpan 10s ease infinite;
+                }
+            }
+        }
+        .display{
+            margin-left: auto;
+            width: 700px;
+            border-radius: 20px;
+            position: relative;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            .pick-a-card{
+                font-size: 80px;
+                margin: 0;
+            }
+            .any-card{
+                margin: 0;
+                font-size: 20px;
+            }
+            img{
+                width: 100%;
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .demo .container{
+        height: 500px;
+        display: flex;
+        align-items: center;
+        width: auto;
+        margin: 40px;
+        >h1{
+            top: 20px;
+            left: 0px;
+            position: absolute;
+        }
+        .display{
+            display: none;
+        }
+        a{
+            position: static;
+        }
+        .easybank-card{
+            transform: rotate(-30deg) translateY(80px);
+            &:hover{
+                animation: none;
+            }
+        }
+        .clipboard-card{
+            transform: rotate(-10deg) translateY(0px);
+            &:hover{
+                animation: none;
+            }
+        }
+        .fylo-card{
+            transform: rotate(10deg) translateY(0px);
+            &:hover{
+                animation: none;
+            }
+        }
+        .crowdfund-card{
+            transform: rotate(30deg) translateY(80px);
+            &:hover{
+                animation: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 900px) {
+    .demo .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        >h1{
+            top: -100px;
+            left: 0px;
+            position: absolute;
+        }
+        .display{
+            display: none;
+        }
+        a{
+            position: static;
+        }
+        .easybank-card{
+            transform: translateY(0px);
+            &:hover{
+                animation: none;
+            }
+        }
+        .clipboard-card{
+            transform: translateY(0px);
+            &:hover{
+                animation: none;
+            }
+        }
+        .fylo-card{
+            transform: translateY(0px);
+            &:hover{
+                animation: none;
+            }
+        }
+        .crowdfund-card{
+            transform: translateY(0px);
+            &:hover{
+                animation: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .demo .container{
+        margin: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .demo .container{
+        margin: 10px;
+    }
+}

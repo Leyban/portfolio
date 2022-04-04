@@ -1,0 +1,227 @@
+@import './colors';
+@import './spin';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
+
+
+.about{
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $paleskin;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .container{
+        max-width: 1200px;
+        background-color: $paleskin;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+
+        .cover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+        }
+        h1{
+            position: absolute;
+            top: -10px;
+            left: 50px;
+            color: #eee;
+            z-index: 6;
+            font-size: 80px;
+        }
+        p{
+            position: absolute;
+            top: 400px;
+            left: 500px;
+            z-index: 6;
+            color: #eee;
+            font-size: 30px;
+            padding: 0 40px 0 0;
+            text-align: center;
+        }
+        .gear-train{
+            width: 1200px;
+            height: 700px;
+            position: relative;
+
+            span{
+                position: absolute;
+                height: 1089px;
+                width: 1089px;
+                border-radius: 50%;
+                background-color: $paleskin;
+                left: 56px;
+                top: -194px;
+            }
+            img{
+                position: absolute;
+            }
+            @keyframes rotation {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes counterrotation {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(-360deg);
+                }
+            }
+            .g100{
+                left: 54.545px;
+                top: -195.455px;
+            }
+            .g25{
+                left: 71px;
+                top: 211px;
+            }
+            .g15{
+                left: 320px;
+                top: 226.5px;
+            }
+            .g40{
+                left: 447px;
+                top: -16px;
+            }
+            .g15face{
+                left: 899.5px;
+                top: 52.5px;
+            }
+        }
+        .spin{
+            @keyframes rotation {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes counterrotation {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(-360deg);
+                }
+            }
+            .g100{
+                animation: rotation $spin100 infinite linear;
+            }
+            .g25{
+                animation: rotation $spin25 infinite linear;
+            }
+            .g15{
+                animation: counterrotation $spin15 infinite linear;
+            }
+            .g40{
+                animation: counterrotation $spin40 infinite linear;
+            }
+            .g15face{
+                animation: rotation $spin15 infinite linear;
+            }        
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .about {
+      background-color: $maroon;
+      padding: 0;
+
+        .container{
+            border-radius: 0;
+            background-color: $maroon;
+
+            .cover{
+                display: none;
+            }
+            h1{
+                color: #333;
+                top: 200px;
+                left: 150px;
+            }
+            p{
+                color: #333;
+                position: absolute;
+                top: 670px;
+                left: 140px;
+                padding: 0 100px 0 0;
+                text-align: center;
+            }
+            .gear-train{
+                height: 1100px;
+                span{
+                    top: 6px;
+                }
+                .g100{
+                    top: 4.55px;
+                }
+                .g25{
+                    top: 411px;
+                }
+                .g15{
+                    top: 426.5px;
+                }
+                .g40{
+                    top: 184px;
+                }
+                .g15face{
+                    top: 252.5px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1070px) {
+    .about .container p{
+        position: absolute;
+        top: 670px;
+        text-align: right;
+        padding: 0 20px 0 0;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .about .container h1{
+        top: 235px;
+        font-size: 70px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .about .container {
+        h1{
+            font-size: 60px;
+        }
+        p{
+            top: 680px;
+            font-size: 24px;
+            padding: 0 10px 0 0;
+        }
+    }
+}
+@media only screen and (max-width: 420px) {
+    .about .container {
+        h1{
+            top: 235px;
+            right: 0;
+            font-size: 60px;
+            text-align: right;
+            width: 150px;
+        }
+        p{
+            top: 680px;
+            font-size: 20px;
+            padding: 0 5px 0 0;
+        }
+    }
+}

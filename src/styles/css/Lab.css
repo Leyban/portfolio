@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap");
+.lab {
+  background-color: #F8E4B7;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 100px;
+}
+.lab .container {
+  background-color: #AA3A3A;
+  width: 1200px;
+  height: 700px;
+  border-radius: 20px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  /* This container is needed to position the front and back side */
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  /* Position the front and back side */
+  /* Style the back side */
+}
+.lab .container .title {
+  padding: 40px;
+}
+.lab .container .title h1 {
+  color: #eee;
+  font-size: 80px;
+  margin: 0;
+}
+.lab .container .flip-card {
+  align-self: center;
+  background-color: transparent;
+  width: 350px;
+  height: 500px;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+.lab .container .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.lab .container .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.lab .container .flip-card-front, .lab .container .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+.lab .container .flip-card-back {
+  transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 1200px) {
+  .lab {
+    background-color: #AA3A3A;
+  }
+  .lab .container {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .lab {
+    padding-top: 0;
+  }
+  .lab .container {
+    margin: 0 20px;
+    height: 1200px;
+    grid-template-areas: "title card1" "title card2";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .lab .container .title {
+    grid-area: title;
+  }
+  .lab .container .card1 {
+    grid-area: card1;
+  }
+  .lab .container .card2 {
+    grid-area: card2;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .lab .container {
+    height: 1000px;
+  }
+  .lab .container .flip-card {
+    width: 300px;
+    height: 450px;
+  }
+  .lab .container .flip-card img {
+    width: 300px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .lab .container .title {
+    padding: 10px;
+  }
+
+  .lab .container {
+    height: 800px;
+  }
+  .lab .container .flip-card {
+    width: 250px;
+    height: 360px;
+  }
+  .lab .container .flip-card img {
+    width: 250px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 490px) {
+  .lab .container .title {
+    padding: 0px;
+  }
+  .lab .container .title h1 {
+    font-size: 60px;
+  }
+}

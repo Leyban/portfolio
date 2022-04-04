@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap");
+.demo {
+  font-family: "Montserrat", sans-serif;
+  background-color: #DADBBD;
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+.demo .container {
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 40px 0 40px 0;
+  color: #333;
+}
+.demo .container > h1 {
+  margin: 0;
+  font-size: 80px;
+  position: absolute;
+}
+.demo .container a {
+  position: absolute;
+}
+.demo .container .easybank-card {
+  transform: rotate(-30deg);
+  left: 100px;
+  top: 400px;
+}
+.demo .container .easybank-card:hover {
+  animation: lift1 0.5s forwards;
+}
+@keyframes lift1 {
+  from {
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(-30deg) translateY(-110px);
+  }
+}
+.demo .container .easybank-card:hover ~ .display .easybank-design {
+  display: block;
+  position: absolute;
+  animation: easybankpan 10s ease infinite;
+}
+@keyframes easybankpan {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -390px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.demo .container .clipboard-card {
+  transform: rotate(-10deg);
+  left: 145px;
+  top: 400px;
+}
+.demo .container .clipboard-card:hover {
+  animation: lift2 0.5s forwards;
+}
+@keyframes lift2 {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(-10deg) translateY(-110px);
+  }
+}
+.demo .container .clipboard-card:hover ~ .display .clipboard-design {
+  display: block;
+  position: absolute;
+  animation: clipboardpan 10s ease infinite;
+}
+@keyframes clipboardpan {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -1150px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.demo .container .fylo-card {
+  transform: rotate(10deg);
+  left: 190px;
+  top: 415px;
+}
+.demo .container .fylo-card:hover {
+  animation: lift3 0.5s forwards;
+}
+@keyframes lift3 {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(10deg) translateY(-110px);
+  }
+}
+.demo .container .fylo-card:hover ~ .display .fylo-design {
+  display: block;
+  position: absolute;
+  animation: fylopan 10s ease infinite;
+}
+@keyframes fylopan {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -1050px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.demo .container .crowdfund-card {
+  transform: rotate(30deg);
+  left: 225px;
+  top: 445px;
+}
+.demo .container .crowdfund-card:hover {
+  animation: lift4 0.5s forwards;
+}
+@keyframes lift4 {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(30deg) translateY(-110px);
+  }
+}
+.demo .container .crowdfund-card:hover ~ .display .crowdfund-design {
+  display: block;
+  position: absolute;
+  animation: crowdfundpan 10s ease infinite;
+}
+@keyframes crowdfundpan {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -310px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.demo .container .display {
+  margin-left: auto;
+  width: 700px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.demo .container .display .pick-a-card {
+  font-size: 80px;
+  margin: 0;
+}
+.demo .container .display .any-card {
+  margin: 0;
+  font-size: 20px;
+}
+.demo .container .display img {
+  width: 100%;
+  display: none;
+}
+
+@media only screen and (max-width: 1250px) {
+  .demo .container {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 40px;
+  }
+  .demo .container > h1 {
+    top: 20px;
+    left: 0px;
+    position: absolute;
+  }
+  .demo .container .display {
+    display: none;
+  }
+  .demo .container a {
+    position: static;
+  }
+  .demo .container .easybank-card {
+    transform: rotate(-30deg) translateY(80px);
+  }
+  .demo .container .easybank-card:hover {
+    animation: none;
+  }
+  .demo .container .clipboard-card {
+    transform: rotate(-10deg) translateY(0px);
+  }
+  .demo .container .clipboard-card:hover {
+    animation: none;
+  }
+  .demo .container .fylo-card {
+    transform: rotate(10deg) translateY(0px);
+  }
+  .demo .container .fylo-card:hover {
+    animation: none;
+  }
+  .demo .container .crowdfund-card {
+    transform: rotate(30deg) translateY(80px);
+  }
+  .demo .container .crowdfund-card:hover {
+    animation: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .demo .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .demo .container > h1 {
+    top: -100px;
+    left: 0px;
+    position: absolute;
+  }
+  .demo .container .display {
+    display: none;
+  }
+  .demo .container a {
+    position: static;
+  }
+  .demo .container .easybank-card {
+    transform: translateY(0px);
+  }
+  .demo .container .easybank-card:hover {
+    animation: none;
+  }
+  .demo .container .clipboard-card {
+    transform: translateY(0px);
+  }
+  .demo .container .clipboard-card:hover {
+    animation: none;
+  }
+  .demo .container .fylo-card {
+    transform: translateY(0px);
+  }
+  .demo .container .fylo-card:hover {
+    animation: none;
+  }
+  .demo .container .crowdfund-card {
+    transform: translateY(0px);
+  }
+  .demo .container .crowdfund-card:hover {
+    animation: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .demo .container {
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .demo .container {
+    margin: 10px;
+  }
+}

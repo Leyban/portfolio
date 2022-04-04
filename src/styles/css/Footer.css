@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap");
+@keyframes fadeIn {
+  0% {
+    transform: translate3d(0, 20px, 0);
+  }
+  25% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  75% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 20px, 0);
+  }
+}
+.footer {
+  font-family: "Montserrat", sans-serif;
+  background-color: #F8E4B7;
+  padding-top: 200px;
+}
+.footer .title {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: end;
+}
+.footer .title h1 {
+  margin: 0;
+  color: #333;
+  font-size: 80px;
+  padding-bottom: 20px;
+}
+.footer .info {
+  background-color: #151D3B;
+  color: #DADBBD;
+  padding: 40px 0 40px 0;
+}
+.footer .info .container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .info .container .email {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .info .container .email .logo {
+  height: 30px;
+}
+.footer .info .container .email .logo img {
+  width: 30px;
+}
+.footer .info .container .email .logo .copy {
+  display: none;
+}
+.footer .info .container .email .text {
+  position: relative;
+}
+.footer .info .container .email .text h2 {
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 4px;
+}
+.footer .info .container .email .text p {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  left: 25%;
+}
+.footer .info .container .email .text .copied {
+  display: block;
+  animation: fadeIn 2s;
+}
+.footer .info .container .email:hover .logo .mail {
+  display: none;
+}
+.footer .info .container .email:hover .logo .copy {
+  display: block;
+}
+.footer .info .container .email:hover .text h2 {
+  color: #77E4D4;
+}
+.footer .info .container .credentials {
+  display: flex;
+}
+.footer .info .container .credentials .github {
+  margin-right: 20px;
+  height: 60px;
+}
+.footer .info .container .credentials .github img {
+  width: 50px;
+}
+.footer .info .container .credentials .github .hover {
+  display: none;
+}
+.footer .info .container .credentials .github:hover .base {
+  display: none;
+}
+.footer .info .container .credentials .github:hover .hover {
+  display: block;
+}
+.footer .info .container .credentials .linkedin img {
+  width: 50px;
+}
+.footer .info .container .credentials .linkedin .hover {
+  display: none;
+}
+.footer .info .container .credentials .linkedin:hover .base {
+  display: none;
+}
+.footer .info .container .credentials .linkedin:hover .hover {
+  display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer .title h1 {
+    padding-right: 20px;
+  }
+
+  .footer .info .container {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .footer .title h1 {
+    font-size: 60px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 555px) {
+  .footer .info .container {
+    display: block;
+  }
+  .footer .info .container .credentials {
+    width: 120px;
+    margin: auto;
+    margin-top: 60px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .footer {
+    padding-top: 70px;
+  }
+
+  .footer .title h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footer .info .email .text h2 {
+    font-size: 20px;
+  }
+}

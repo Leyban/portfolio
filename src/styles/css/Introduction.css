@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap");
+.introduction {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  color: #eee;
+  background-color: #AA3A3A;
+}
+.introduction h1 {
+  margin: 0;
+  font-size: 60px;
+}
+.introduction p {
+  margin: 0;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 520px) {
+  .introduction h1 {
+    font-size: 50px;
+  }
+  .introduction p {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .introduction h1 {
+    font-size: 45px;
+  }
+  .introduction p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .introduction h1 {
+    font-size: 40px;
+  }
+  .introduction p {
+    font-size: 20px;
+  }
+}

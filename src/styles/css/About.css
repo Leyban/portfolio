@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap");
+.about {
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8E4B7;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.about .container {
+  max-width: 1200px;
+  background-color: #F8E4B7;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.about .container .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.about .container h1 {
+  position: absolute;
+  top: -10px;
+  left: 50px;
+  color: #eee;
+  z-index: 6;
+  font-size: 80px;
+}
+.about .container p {
+  position: absolute;
+  top: 400px;
+  left: 500px;
+  z-index: 6;
+  color: #eee;
+  font-size: 30px;
+  padding: 0 40px 0 0;
+  text-align: center;
+}
+.about .container .gear-train {
+  width: 1200px;
+  height: 700px;
+  position: relative;
+}
+.about .container .gear-train span {
+  position: absolute;
+  height: 1089px;
+  width: 1089px;
+  border-radius: 50%;
+  background-color: #F8E4B7;
+  left: 56px;
+  top: -194px;
+}
+.about .container .gear-train img {
+  position: absolute;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes counterrotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.about .container .gear-train .g100 {
+  left: 54.545px;
+  top: -195.455px;
+}
+.about .container .gear-train .g25 {
+  left: 71px;
+  top: 211px;
+}
+.about .container .gear-train .g15 {
+  left: 320px;
+  top: 226.5px;
+}
+.about .container .gear-train .g40 {
+  left: 447px;
+  top: -16px;
+}
+.about .container .gear-train .g15face {
+  left: 899.5px;
+  top: 52.5px;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes counterrotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.about .container .spin .g100 {
+  animation: rotation 60s infinite linear;
+}
+.about .container .spin .g25 {
+  animation: rotation 15s infinite linear;
+}
+.about .container .spin .g15 {
+  animation: counterrotation 9s infinite linear;
+}
+.about .container .spin .g40 {
+  animation: counterrotation 24s infinite linear;
+}
+.about .container .spin .g15face {
+  animation: rotation 9s infinite linear;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about {
+    background-color: #AA3A3A;
+    padding: 0;
+  }
+  .about .container {
+    border-radius: 0;
+    background-color: #AA3A3A;
+  }
+  .about .container .cover {
+    display: none;
+  }
+  .about .container h1 {
+    color: #333;
+    top: 200px;
+    left: 150px;
+  }
+  .about .container p {
+    color: #333;
+    position: absolute;
+    top: 670px;
+    left: 140px;
+    padding: 0 100px 0 0;
+    text-align: center;
+  }
+  .about .container .gear-train {
+    height: 1100px;
+  }
+  .about .container .gear-train span {
+    top: 6px;
+  }
+  .about .container .gear-train .g100 {
+    top: 4.55px;
+  }
+  .about .container .gear-train .g25 {
+    top: 411px;
+  }
+  .about .container .gear-train .g15 {
+    top: 426.5px;
+  }
+  .about .container .gear-train .g40 {
+    top: 184px;
+  }
+  .about .container .gear-train .g15face {
+    top: 252.5px;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .about .container p {
+    position: absolute;
+    top: 670px;
+    text-align: right;
+    padding: 0 20px 0 0;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .about .container h1 {
+    top: 235px;
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .about .container h1 {
+    font-size: 60px;
+  }
+  .about .container p {
+    top: 680px;
+    font-size: 24px;
+    padding: 0 10px 0 0;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .about .container h1 {
+    top: 235px;
+    right: 0;
+    font-size: 60px;
+    text-align: right;
+    width: 150px;
+  }
+  .about .container p {
+    top: 680px;
+    font-size: 20px;
+    padding: 0 5px 0 0;
+  }
+}

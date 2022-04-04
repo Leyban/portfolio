@@ -1,0 +1,6 @@
+@use "sass:math";
+
+$spin100: 60s;
+$spin15: $spin100 * 0.15;
+$spin40: $spin100 * 0.40;
+$spin25: $spin100 * 0.25;
